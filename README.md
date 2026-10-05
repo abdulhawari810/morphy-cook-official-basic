@@ -200,4 +200,4 @@ Copyright (c) 2026 Morphy Labs. Dikembangkan oleh **Morphy Labs**.
 
 Terima kasih sudah melihat repository github **Morphy Cook Official**.
 
-[![Donasi Saweria](https://shields.io)](https://saweria.co/MorphyLabs)
+[![Donasi Saweria](https://saweria.co/MorphyLabs)
