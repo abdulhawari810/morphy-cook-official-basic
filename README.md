@@ -184,13 +184,11 @@ Library dan dependensi pihak ketiga mungkin punya lisensi sendiri. Kamu bertangg
 
 Kalau ada kendala saat setup atau pemakaian, baca dokumentasi dulu (`docs/`, khususnya `docs/Troubleshooting/troubleshooting.md`).
 
-Untuk bantuan tambahan, laporan bug, atau pertanyaan produk, gunakan kanal support dari marketplace tempat produk dibeli.
-
 ## Roadmap
 
 Morphy Cook Official akan terus diperbaiki.
 
-Update berikutnya bisa berisi fitur baru, peningkatan, optimasi, penguatan keamanan, dan opsi kustomisasi tambahan. Lihat `CHANGELOG.md` untuk status terkini (fitur review: API sudah jadi, frontend menyusul).
+Update berikutnya bisa berisi fitur baru, peningkatan, optimasi, penguatan keamanan, dan opsi kustomisasi tambahan. Lihat `CHANGELOG.md` untuk status terkini.
 
 ## Kredit
 
