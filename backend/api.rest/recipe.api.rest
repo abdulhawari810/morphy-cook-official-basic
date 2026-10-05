@@ -1,0 +1,709 @@
+# CONTOH request untuk dicoba lokal. Ganti token setelah login. Jangan commit token asli.
+@base = http://localhost:5010/api/
+@contentType = application/json
+@RefreshToken= PASTE_TOKEN_DISINI_SETELAH_LOGIN
+@AccessToken= PASTE_TOKEN_DISINI_SETELAH_LOGIN
+
+### Login
+POST {{base}}auth/login
+Content-Type: {{contentType}}
+
+{
+    "UsersOrEmail": "contoh@domain.com",
+    "password": "Password123!"
+}
+
+### get Recipe API
+GET {{base}}recipes
+
+### get Recipe by id API
+GET {{base}}recipes/single/3
+
+### get Recipe by category API
+GET {{base}}recipes/category/Italian
+
+### get Recipe by title API
+GET {{base}}recipes/search?title=Pizza
+
+### Create Recipe API
+POST {{base}}recipes/create
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}
+
+    # {
+    #     "title": "Margherita Pizza",
+    #     "description": "Traditional Italian pizza with fresh mozzarella, basil, and tomato sauce.",
+    #     "category": "Italian",
+    #     "ingredients": [
+    #         "300g pizza dough",
+    #         "200ml tomato sauce",
+    #         "250g fresh mozzarella",
+    #         "Fresh basil leaves",
+    #         "Extra virgin olive oil",
+    #         "Salt",
+    #         "Black pepper"
+    #     ],
+    #     "image": 
+    #         "https://example.com/images/margherita-pizza.jpg"
+    #     ,
+    #     "instructions": [
+    #         "Preheat oven to 250°C.",
+    #         "Roll out the pizza dough on a floured surface.",
+    #         "Spread tomato sauce evenly over the dough.",
+    #         "Add torn mozzarella pieces.",
+    #         "Bake for 12-15 minutes until crust is golden.",
+    #         "Top with fresh basil and a drizzle of olive oil.",
+    #         "Season and serve hot."
+    #     ]
+    # }
+
+{
+    "title": "Spaghetti Carbonara",
+    "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+    "category": "Italian",
+    "ingredients": [
+        "200g spaghetti",
+        "100g pancetta",
+        "2 large eggs",
+        "50g pecorino cheese",
+        "50g parmesan cheese",
+        "Black pepper",
+        "Salt"
+    ],
+    "difficulty": "Easy",
+    "time": 20,
+    "image": 
+        "https://example.com/images/spaghetti-carbonara.jpg"
+    ,
+    "instructions": [
+        "Cook the spaghetti in a large pot of boiling salted water until al dente.",
+        "In a separate pan, cook the pancetta until crispy.",
+        "In a bowl, beat the eggs and mix in the cheeses.",
+        "Drain the spaghetti and return it to the pot. Add the pancetta and egg mixture, tossing quickly to combine.",
+        "Season with black pepper and serve immediately."
+    ]
+}
+
+
+### update Recipe API
+PATCH {{base}}recipes/update/3
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}
+
+    {
+        "title": "Contoh Pizza",
+        "description": "Traditional Italian pizza with fresh mozzarella, basil, and tomato sauce.",
+        "category": "Italian",
+        "ingredients": [
+            "300g pizza dough",
+            "200ml tomato sauce",
+            "250g fresh mozzarella",
+            "Fresh basil leaves",
+            "Extra virgin olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "difficulty": "Medium",
+        "time": "30 minutes",
+        "image": 
+            "https://example.com/images/margherita-pizza.jpg"
+        ,
+        "instructions": [
+            "Preheat oven to 250°C.",
+            "Roll out the pizza dough on a floured surface.",
+            "Spread tomato sauce evenly over the dough.",
+            "Add torn mozzarella pieces.",
+            "Bake for 12-15 minutes until crust is golden.",
+            "Top with fresh basil and a drizzle of olive oil.",
+            "Season and serve hot."
+        ]
+    }
+
+### Create Multiple Recipes API
+POST {{base}}recipes/create/multiple
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}
+
+[
+  {
+    "title": "Daging Rendang Sapi",
+    "description": "Gunakan api kecil agar tidak gosong Semakin lama dimasak, rendang makin enak Cocok dimakan dengan nasi hangat",
+    "ingredients": [
+      "kg daging sapi (potong sesuai selera)",
+      "liter santan kental",
+      "batang serai (memarkan)",
+      "lembar daun jeruk",
+      "lembar daun kunyit (opsional)",
+      "Garam secukupnya",
+      "siung bawang putih",
+      "siung bawang merah",
+      "cabai merah (sesuai selera)",
+      "2 cm jahe",
+      "3 cm kunyit",
+      "3 butir kemiri",
+      "2 cm lengkuas"
+    ],
+    "difficulty": "Medium",
+    "time": 25,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(1).jpeg",
+    "instructions": [
+      "Tumis bumbu halus sampai harum.",
+      "Masukkan serai, daun jeruk, dan daun kunyit.",
+      "Masukkan daging, aduk sampai berubah warna.",
+      "Tuang santan, masak dengan api kecil sambil diaduk perlahan.",
+      "Masak lama (±2–3 jam) sampai santan mengering dan bumbu meresap.",
+      "Aduk terus sampai warna jadi cokelat gelap dan berminyak."
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Sayur Bayam Bening",
+    "description": "Enak disantap hangat dengan nasi dan ikan goreng",
+    "ingredients": [
+      "1 ikat bayam",
+      "1 buah jagung manis, potong-potong",
+      "2 siung bawang merah, iris",
+      "1 siung bawang putih, iris",
+      "700 ml air",
+      "Garam secukupnya",
+      "Gula sedikit",
+      "Temu kunci (opsional)"
+    ],
+    "difficulty": "Medium",
+    "time": 15,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(2).jpeg",
+    "instructions": [
+      "Rebus air sampai mendidih",
+      "Masukkan bawang merah, bawang putih, dan temu kunci",
+      "Tambahkan jagung, masak sampai empuk",
+      "Masukkan bayam",
+      "Beri garam dan sedikit gula",
+      "Masak sebentar saja sampai bayam layu, lalu matikan api"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Ayam Geprek Crispy",
+    "description": "Enak disantap hangat dengan nasi dan ikan goreng",
+    "ingredients": [
+      "500 gr ayam",
+      "1 bungkus tepung crispy",
+      "5 siung bawang putih",
+      "10 cabai rawit",
+      "Garam & penyedap secukupnya",
+      "Minyak goreng"
+    ],
+    "difficulty": "Easy",
+    "time": 10,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(3).jpeg",
+    "instructions": [
+      "Cuci ayam lalu lumuri garam & bawang putih halus",
+      "Balur ayam dengan tepung crispy",
+      "Goreng sampai kuning keemasan",
+      "Ulek cabai, bawang putih, garam & penyedap",
+      "Geprek ayam di atas sambal",
+      "Sajikan dengan nasi hangat"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Sop Bakso Simpel & Enak",
+    "description": "Cocok dimakan pas cuaca dingin atau lagi pengen yang berkuah hangat",
+    "ingredients": [
+      "15 butir bakso",
+      "1 buah wortel",
+      "1 batang daun bawang",
+      "1 batang seledri",
+      "2 siung bawang putih",
+      "1 liter air",
+      "Garam secukupnya",
+      "Merica secukupnya",
+      "Kaldu bubuk secukupnya"
+    ],
+    "difficulty": "Easy",
+    "time": 10,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(4).jpeg",
+    "instructions": [
+      "Iris wortel, daun bawang, dan seledri",
+      "Geprek lalu tumis bawang putih sampai harum",
+      "Rebus air hingga mendidih",
+      "Masukkan tumisan bawang putih & bakso",
+      "Tambahkan wortel lalu masak sampai empuk",
+      "Beri garam, merica, dan kaldu bubuk",
+      "Masukkan daun bawang & seledri",
+      "Koreksi rasa lalu sajikan hangat"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Nasi Goreng Seafood",
+    "description": "Cocok dimakan pas cuaca dingin atau lagi pengen yang berkuah hangat",
+    "ingredients": [
+      "1 piring nasi putih",
+      "Udang secukupnya",
+      "Cumi secukupnya",
+      "2 siung bawang putih",
+      "3 siung bawang merah",
+      "1 butir telur",
+      "2 sdm kecap manis",
+      "Saus tiram secukupnya",
+      "Garam & kaldu bubuk secukupnya",
+      "Daun bawang iris",
+      "Cabai sesuai selera"
+    ],
+    "difficulty": "Medium",
+    "time": 20,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(5).jpeg",
+    "instructions": [
+      "Tumis bawang merah & bawang putih sampai harum",
+      "Masukkan telur, orak-arik",
+      "Tambahkan udang & cumi, masak sampai matang",
+      "Masukkan nasi putih, aduk rata",
+      "Tambahkan kecap, saus tiram, garam, dan kaldu",
+      "Masukkan daun bawang & cabai",
+      "Aduk sampai harum dan matang merata"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Resep Soto Ayam Kuning",
+    "description": "Cocok dimakan pas cuaca dingin atau lagi pengen yang berkuah hangat",
+    "ingredients": [
+      "500 g ayam (potong)",
+      "2 liter air",
+      "2 batang serai (memarkan)",
+      "3 lembar daun jeruk",
+      "2 lembar daun salam",
+      "2 cm lengkuas (memarkan)",
+      "Garam & gula secukupnya",
+      "Minyak untuk menumis"
+    ],
+    "difficulty": "Medium",
+    "time": 30,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(6).jpeg",
+    "instructions": [
+      "5 siung bawang putih",
+      "6 siung bawang merah",
+      "3 butir kemiri (sangrai)",
+      "2 cm kunyit",
+      "1 cm jahe",
+      "1 sdt ketumbar"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "bakwan sayur simpel & enak",
+    "description": "Cocok dimakan pas cuaca dingin atau lagi pengen yang berkuah hangat Tips: Pakai minyak panas biar renyah Bisa tambah udang kecil biar makin gurih",
+    "ingredients": [
+      "1 buah wortel (serut)",
+      "Kol secukupnya (iris tipis)",
+      "Daun bawang 2 batang (iris)",
+      "5 sdm tepung terigu",
+      "1 sdm tepung beras (biar renyah)",
+      "1 siung bawang putih (haluskan)",
+      "Garam secukupnya",
+      "Merica secukupnya",
+      "Air secukupnya"
+    ],
+    "difficulty": "Medium",
+    "time": 30,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(7).jpeg",
+    "instructions": [
+      "Campur semua sayur dalam wadah",
+      "Masukkan tepung terigu + tepung beras",
+      "Tambahkan bawang putih, garam, merica",
+      "Tuang air sedikit demi sedikit sampai adonan agak kental",
+      "Panaskan minyak, goreng adonan pakai sendok",
+      "Goreng sampai kuning kecoklatan & matang"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Sayur Lodeh Santan Gurih",
+    "description": "Cocok dimakan pas cuaca dingin atau lagi pengen yang berkuah hangat Tips: Pakai minyak panas biar renyah Bisa tambah udang kecil biar makin gurih",
+    "ingredients": [
+      "1 buah labu siam, potong dadu",
+      "5 kacang panjang, potong",
+      "1 terong ungu, potong",
+      "1 jagung manis, potong",
+      "500 ml santan",
+      "2 lembar daun salam",
+      "1 lengkuas, geprek",
+      "4 bawang merah",
+      "2 bawang putih",
+      "2 kemiri",
+      "1 sdt ketumbar",
+      "Garam & gula secukupnya"
+    ],
+    "difficulty": "Medium",
+    "time": 30,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(8).jpeg",
+    "instructions": [
+      "Tumis bumbu halus sampai harum",
+      "Masukkan daun salam & lengkuas",
+      "Tambahkan air, lalu masukkan sayuran ",
+      "Setelah agak empuk, tuang santan",
+      "Masak sambil diaduk biar santan nggak pecah",
+      "Koreksi rasa, siap disajikan"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Ikan Goreng Sambel Pedas",
+    "description": "Cocok dimakan pas cuaca panas di siang hari atau lagi pengen yang pedes2 Tips: Pakai minyak panas biar renyah Bisa tambah udang kecil biar makin gurih",
+    "ingredients": [
+      "2 ekor ikan (nila/lele/apa aja)",
+      "3 siung bawang putih",
+      "1 sdt garam",
+      "1/2 sdt kunyit bubuk (opsional)",
+      "Minyak untuk goreng",
+      "10 cabai merah",
+      "5 cabai rawit (sesuai selera)",
+      "2 siung bawang putih",
+      "3 siung bawang merah",
+      "1 buah tomat",
+      "1/2 sdt garam",
+      "1 sdt gula"
+    ],
+    "difficulty": "Medium",
+    "time": 30,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(9).jpeg",
+    "instructions": [
+      "Lumuri ikan dengan bawang putih + garam + kunyit, diamkan 15 menit",
+      "Goreng ikan sampai kuning keemasan & garing",
+      "Goreng semua bahan sambel sebentar",
+      "Ulek kasar sambel + garam + gula",
+      "Siram sambel di atas ikan goreng",
+      "Siap disajikan!",
+      "Paling enak dimakan sama nasi hangat dan lalapan"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "capcay kuah yang simpel & enak",
+    "description": "Cocok dimakan pas cuaca panas di siang hari atau lagi pengen yang pedes2 Tips: Pakai minyak panas biar renyah Bisa tambah udang kecil biar makin gurih",
+    "ingredients": [
+      "1 wortel, iris tipis",
+      "5 lembar sawi hijau",
+      "1/4 kol, potong",
+      "5 bakso, iris",
+      "1 dada ayam, potong kecil",
+      "2 siung bawang putih, cincang",
+      "1/2 bawang bombay, iris",
+      "1 sdm saus tiram",
+      "1 sdt kecap asin",
+      "Garam & lada secukupnya",
+      "400 ml air",
+      "1 sdt maizena (larutkan)"
+    ],
+    "difficulty": "Hard",
+    "time": 40,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(10).jpeg",
+    "instructions": [
+      "Tumis bawang putih & bombay sampai harum",
+      "Masukkan ayam & bakso, aduk sampai berubah warna",
+      "Tambahkan wortel, masak sebentar",
+      "Tuang air, lalu masukkan kol & sawi",
+      "Tambahkan saus tiram, kecap asin, garam & lada",
+      "Masukkan larutan maizena, aduk sampai kuah agak kental",
+      "Koreksi rasa, siap disajikan"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Tempe Goreng Tepung Crispy",
+    "description": "Cocok dimakan pas cuaca panas di siang hari atau lagi pengen yang pedes2 Tips: Tambah tepung beras/maizena biar makin kriuk Minyak harus panas biar nggak nyerap minyak Bisa tambah kaldu bubuk biar lebih gurih",
+    "ingredients": [
+      " 1 papan tempe (potong tipis)",
+      " 5 sdm tepung terigu",
+      " 2 sdm tepung beras (biar renyah)",
+      " 1 batang daun bawang (iris, opsional)",
+      " 2 siung bawang putih (haluskan)",
+      " 1/2 sdt ketumbar bubuk",
+      " Garam secukupnya",
+      " Air secukupnya",
+      " Minyak goreng"
+    ],
+    "difficulty": "Easy",
+    "time": 8,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(11).jpeg",
+    "instructions": [
+      " Campur tepung terigu, tepung beras, bawang putih, ketumbar, garam, dan daun bawang",
+      " Tambahkan air sedikit demi sedikit sampai adonan agak kental",
+      " Celupkan tempe ke adonan sampai terbalut rata",
+      " Goreng di minyak panas sampai kuning keemasan & crispy",
+      " Angkat, tiriskan, siap disajikan"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Sup Ayam Bening Segar",
+    "description": "Cocok buat ibu lagi kurang enak badan atau menu ringan sehari-hari",
+    "ingredients": [
+      " 250 gr ayam (potong kecil)",
+      " 1 liter air",
+      " 3 siung bawang putih (geprek)",
+      " 1/2 bawang bombay (iris)",
+      " 1 buah wortel (iris)",
+      " 1 kentang (potong)",
+      " 1 batang daun bawang (iris)",
+      " 1 batang seledri",
+      " Garam secukupnya",
+      " Kaldu bubuk (opsional)",
+      " Lada secukupnya"
+    ],
+    "difficulty": "Easy",
+    "time": 8,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(12).jpeg",
+    "instructions": [
+      "Rebus ayam sampai keluar kotorannya, lalu buang airnya dan bilas ayam.",
+      "Rebus lagi ayam dengan air baru sampai empuk.",
+      "Masukkan bawang putih & bawang bombay, masak sampai harum.",
+      "Tambahkan wortel & kentang, masak sampai lunak.",
+      "Bumbui dengan garam, lada, dan kaldu bubuk.",
+      "Masukkan daun bawang & seledri, masak sebentar.",
+      "Sajikan hangat, enak banget!"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Mie Goreng Jawa",
+    "description": "Bumbu diulek → rasanya lebih nendang Warna coklat gelap dari kecap manis Biasanya agak “medok” (bumbu berasa banget)",
+    "ingredients": [
+      "1 porsi mie kuning / mie telur",
+      "1 butir telur",
+      "2 lembar kol (iris)",
+      "1 batang daun bawang",
+      "Ayam suwir / bakso (opsional)",
+      "2 sdm kecap manis",
+      "1 sdt saus tiram",
+      "Garam & lada secukupnya",
+      "Minyak untuk menumis",
+      "2 siung bawang putih",
+      "3 siung bawang merah",
+      "2 butir kemiri",
+      "1/2 sdt merica"
+    ],
+    "difficulty": "Easy",
+    "time": 15,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(13).jpeg",
+    "instructions": [
+      "Rebus mie sebentar, tiriskan",
+      "Haluskan semua bumbu",
+      "Tumis bumbu sampai harum & matang",
+      "Masukkan telur, orak-arik",
+      "Tambahkan ayam/bakso + kol, aduk rata",
+      "Masukkan mie, beri kecap manis, saus tiram, garam & lada",
+      "Aduk sampai meresap dan sedikit kering"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "tumis kangkung terasi",
+    "description": "Tips: Masak kangkung cukup sebentar supaya tetap hijau & renyah ya!",
+    "ingredients": [
+      "1 ikat kangkung, siangi & cuci bersih",
+      "3 siung bawang putih, cincang",
+      "2 siung bawang merah, iris",
+      "2 buah cabai merah (opsional), iris",
+      "1/2 sdt terasi bakar",
+      "1 sdm saus tiram",
+      "1 sdt gula",
+      "Garam secukupnya",
+      "50 ml air",
+      "Minyak untuk menumis"
+    ],
+    "difficulty": "Easy",
+    "time": 15,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(14).jpeg",
+    "instructions": [
+      "Panaskan minyak, tumis bawang putih & bawang merah sampai harum",
+      "Masukkan cabai & terasi, aduk rata",
+      "Tambahkan kangkung, aduk cepat",
+      "Tuang air, lalu masukkan saus tiram, gula & garam",
+      "Aduk hingga layu (jangan terlalu lama biar tetap segar)",
+      "Koreksi rasa, angkat & sajikan"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Ayam Goreng Kuning",
+    "description": "Tips: Goreng sebentar = empuk, lama = lebih kering Air sisa ungkep bisa jadi kremesanEnak pakai sambal + lalapan",
+    "ingredients": [
+      "1 ekor ayam, potong",
+      "500 ml air kelapa (opsional)",
+      "2 lembar daun salam",
+      "2 batang serai, geprek",
+      "1 ruas lengkuas, geprek",
+      "Garam & gula secukupnya",
+      "Minyak goreng",
+      "6 bawang putih",
+      "8 bawang merah",
+      "3 kemiri sangrai",
+      "1 ruas kunyit",
+      "1 ruas jahe",
+      "1 sdt ketumbar",
+      "(opsional) lada"
+    ],
+    "difficulty": "Medium",
+    "time": 40,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(15).jpeg",
+    "instructions": [
+      "Haluskan semua bumbu",
+      "Ungkep ayam + bumbu + rempah + air kelapa",
+      "Masak sampai empuk & air menyusut",
+      "Angkat & tiriskan",
+      "Goreng sampai kuning keemasan"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "sayur asem segar",
+    "description": "Tips: Goreng sebentar = empuk, lama = lebih kering Air sisa ungkep bisa jadi kremesanEnak pakai sambal + lalapan",
+    "ingredients": [
+      "1 buah jagung manis, potong",
+      "1 genggam kacang panjang, potong",
+      "1 buah labu siam, potong dadu",
+      "1 genggam daun melinjo",
+      "50 gr melinjo (opsional)",
+      "2 sdm asam jawa + air",
+      "1 liter air",
+      "3 siung bawang merah",
+      "2 siung bawang putih",
+      "2 buah cabai merah",
+      "1 sdt terasi (sedikit saja)",
+      "Garam & gula secukupnya"
+    ],
+    "difficulty": "Medium",
+    "time": 20,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(16).jpeg",
+    "instructions": [
+      "Rebus air sampai mendidih",
+      "Masukkan jagung & melinjo, masak sampai agak empuk",
+      "Tambahkan bumbu halus, aduk rata",
+      "Masukkan labu siam & kacang panjang",
+      "Tuang air asam jawa, beri garam & gula",
+      "Terakhir masukkan daun melinjo, masak sebentar saja",
+      "Koreksi rasa, siap disajikan"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Nasi Goreng Kampung",
+    "description": "Tips: Pakai nasi dingin biar tidak lembek Api besar = lebih wangi & enak Terasi bikin rasa makin mantap",
+    "ingredients": [
+      "2 piring nasi putih (lebih enak nasi dingin)",
+      "2 siung bawang putih",
+      "3 siung bawang merah",
+      "2–3 cabai merah (sesuai selera)",
+      "1 butir telur",
+      "1 sdm kecap manis",
+      "½ sdt terasi (opsional)",
+      "Garam secukupnya",
+      "Minyak goreng secukupnya",
+      "Ayam suwir / ikan teri / sosis",
+      "Telur ceplok, kerupuk, acar"
+    ],
+    "difficulty": "Medium",
+    "time": 20,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(17).jpeg",
+    "instructions": [
+      "Haluskan bawang putih, bawang merah, cabai, dan terasi",
+      "Tumis bumbu sampai harum",
+      "Masukkan telur, orak-arik",
+      "Tambahkan nasi, aduk rata",
+      "Tuang kecap + garam",
+      "Masak sampai agak kering & harum",
+      "Koreksi rasa, siap disajikan"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Spaghetti Saus Daging",
+    "description": "Tips: Pakai nasi dingin biar tidak lembek Api besar = lebih wangi & enak Terasi bikin rasa makin mantap",
+    "ingredients": [
+      "1 bungkus spaghetti",
+      "200 gr daging cincang",
+      "3 siung bawang putih (cincang)",
+      "1/2 bawang bombay (iris)",
+      "1 sachet saus tomat",
+      "2 sdm saus sambal (opsional)",
+      "Garam & gula secukupnya",
+      "Merica secukupnya",
+      "Minyak untuk menumis"
+    ],
+    "difficulty": "Medium",
+    "time": 30,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(18).jpeg",
+    "instructions": [
+      "Rebus spaghetti sampai matang, tiriskan",
+      "Tumis bawang putih & bawang bombay sampai harum",
+      "Masukkan daging cincang, masak sampai berubah warna",
+      "Tambahkan saus tomat & saus sambal",
+      "Bumbui dengan garam, gula, dan merica",
+      "Masak sampai saus agak kental",
+      "Sajikan spaghetti dengan saus di atasnya"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Makaroni Goreng Simpel & Enak",
+    "description": "Tips: Pakai nasi dingin biar tidak lembek Api besar = lebih wangi & enak Terasi bikin rasa makin mantap",
+    "ingredients": [
+      "200 gr makaroni (rebus, tiriskan)",
+      "2 butir telur",
+      "3 siung bawang putih (cincang)",
+      "2 siung bawang merah (iris)",
+      "2 sdm saus tiram",
+      "1 sdm kecap manis",
+      "Garam & lada secukupnya",
+      "Daun bawang (iris)",
+      "Minyak untuk menumis"
+    ],
+    "difficulty": "easy",
+    "time": 15,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(19).jpeg",
+    "instructions": [
+      "Panaskan minyak, tumis bawang putih & bawang merah sampai harum",
+      "Masukkan telur, orak-arik sampai matang",
+      "Tambahkan makaroni, aduk rata",
+      "Masukkan saus tiram, kecap manis, garam & lada",
+      "Aduk sampai bumbu merata dan sedikit kering",
+      "Tambahkan daun bawang, aduk sebentar"
+    ],
+    "status": "accept"
+  },
+  {
+    "title": "Lumpia Goreng Renyah",
+    "description": "Siap disajikan! Cocok pakai saus sambal atau cabai rawit",
+    "ingredients": [
+      "10 lembar kulit lumpia",
+      "2 wortel, parut",
+      "100 gr kol, iris tipis",
+      "2 siung bawang putih, cincang",
+      "1 butir telur",
+      "1 sdm saus tiram",
+      "Garam & lada secukupnya",
+      "Minyak untuk menggoreng"
+    ],
+    "difficulty": "easy",
+    "time": 15,
+    "image": "https://uepslbjylotnyoygcbxo.supabase.co/storage/v1/object/public/recipe/food/Food%20(20).jpeg",
+    "instructions": [
+      "Tumis bawang putih sampai harum",
+      "Masukkan wortel & kol, aduk sampai layu",
+      "Tambahkan telur, orak-arik",
+      "Bumbui dengan saus tiram, garam, lada",
+      "Ambil kulit lumpia, isi secukupnya, lalu gulung",
+      "Rekatkan ujungnya pakai air",
+      "Goreng sampai kuning keemasan"
+    ],
+    "status": "accept"
+  }
+]
+
+
+### delete Recipe API
+DELETE {{base}}recipes/delete/1
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}

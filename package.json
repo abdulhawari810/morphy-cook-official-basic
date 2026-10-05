@@ -1,0 +1,21 @@
+{
+  "name": "Morphy Cook Official",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "cd backend && nodemon app.js",
+    "frontend": "cd frontend && npm run dev",
+    "frontend-setup": "cd frontend && npm install",
+    "backend-setup": "cd backend && npm install",
+    "backend-migrate": "cd backend && npm run migrate",
+    "backend-migrate:rollback": "cd backend && npm run migrate:rollback",
+    "backend-seed": "cd backend && npm run seed",
+    "backend-db:setup": "cd backend && npm run db:setup"
+  },
+  "keywords": [],
+  "author": "abdulhawari",
+  "license": "ISC",
+  "type": "module"
+}

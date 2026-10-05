@@ -1,0 +1,38 @@
+# CONTOH request untuk dicoba lokal. Ganti token setelah login. Jangan commit token asli.
+@base = http://localhost:5000/api/
+@contentType = application/json
+@AccessToken = PASTE_TOKEN_DISINI_SETELAH_LOGIN
+
+### Lihat review satu resep (publik)
+GET {{base}}reviews/recipe/1?page=1&limit=10
+
+### Ringkasan rating satu resep (publik)
+GET {{base}}reviews/recipe/1/summary
+
+### Review milik sendiri (login)
+GET {{base}}reviews/me
+Authorization: Bearer {{AccessToken}}
+
+### Buat review (login, rating 1-5)
+POST {{base}}reviews/recipe/1
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}
+
+{
+    "rating": 5,
+    "comment": "Enak banget, bumbunya pas!"
+}
+
+### Ubah review milik sendiri (login)
+PATCH {{base}}reviews/1
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}
+
+{
+    "rating": 4,
+    "comment": "Update: setelah coba lagi, rasanya pas."
+}
+
+### Hapus review (pemilik atau admin)
+DELETE {{base}}reviews/1
+Authorization: Bearer {{AccessToken}}

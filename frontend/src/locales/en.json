@@ -1,0 +1,816 @@
+{
+  "security": {
+    "title": "Security",
+    "password": {
+      "title": "Password",
+      "text": "Change your password to keep your account secure."
+    },
+    "two_step_verification": {
+      "title": "2-Step Verification",
+      "text": "Use additional verification code when logging in.",
+      "last_active": "Last Activated",
+      "button": {
+        "next": "Enter a Code",
+        "verification": "Verification Code",
+        "verifying": "Is Verifying...",
+        "disable": "Yes, Disable it",
+        "cancel": "Cancel"
+      },
+      "toast": {
+        "code_required": "The OTP code must be 6 digits."
+      },
+      "modal": {
+        "title": "Are you sure you want to deactivate?",
+        "subtitle": "Did you disable 2-step verification?"
+      }
+    },
+    "delete_account": {
+      "title": "Delete Account",
+      "text": "Temporarily delete your account.",
+      "modal": {
+        "title": "Are you sure you want to delete?",
+        "subtitle": "Your account will be deleted, but you can recover it."
+      },
+      "button": {
+        "cancel": "Cancel",
+        "yes_delete": "Yes, Delete it!"
+      }
+    },
+    "2_factor": {
+      "title": "Security Setup",
+      "title_header": "Enable Two Factor Authentication",
+      "paragraph_header": "Secure your account with an additional layer of protection. Scan the code to connect your identity with the app's 2FAS Auth.",
+      "step1": {
+        "text": "Open",
+        "text2": "2FAS Authentication Application",
+        "text3": "(or your preferred authentication) on your mobile device."
+      },
+      "step2": {
+        "text": "Tap",
+        "text2": "Button and Select",
+        "text3": "Scan QR Code"
+      },
+      "text_animation": "Waiting For Connections",
+      "qrcode_alt": "Two-step verification QR code",
+      "qr_unavailable": "The QR code could not be displayed. Close the dialog and try again.",
+      "manual_secret": "Can't scan? Enter this key manually",
+      "tab_scan": "Scan QR",
+      "tab_enter_code": "Enter Code",
+      "enter_code_button": "Enter OTP Code"
+    },
+    "verify_2_factor": {
+      "title": "Enter Verification Code",
+      "paragraph": "We have sent a 6 digit code to your registered device. Please enter below to resume your identity.",
+      "modal": {
+        "title": "OTP Verifications code",
+        "subtitle": "Confirm OTP code",
+        "subtext": "Enter the OTP code from your 2FAS app.",
+        "button": {
+          "cancel": "Cancel",
+          "verification": "Verification Code",
+          "verifying": "Is Verifying..."
+        }
+      },
+      "button": {
+        "verify": "Verify Code"
+      }
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "cooking_level": "Cooking Level",
+    "cooking_paragraph": "Choose your cooking skill level",
+    "select_skill": "Choose Your Skill",
+    "preference_food": "Preference Food",
+    "alergi_food": "Food Allergy",
+    "add_input": "Add Input",
+    "toast_preference_food": "Food preferences cannot be empty!",
+    "loading_save": "Loading...",
+    "date": "Your date of birth is required.",
+    "avatar": "Profile picture",
+    "birth_date": "Date of birth",
+    "birth_date_clear": "Clear",
+    "birth_date_today": "Today"
+  },
+  "notification": {
+    "title": "Notification",
+    "security_alert": {
+      "title": "Security Updates",
+      "text": "Receive notifications when there is suspicious activity, new logins, or account security changes."
+    },
+    "email_update": {
+      "title": "Email Updates",
+      "text": "Get email updates about your account and important activity."
+    },
+    "recipe_update": {
+      "title": "Recipes Updates",
+      "text": "Receive notifications when your favorite recipes or recipes you follow get updates."
+    },
+    "activity_summary": {
+      "title": "Activity Summary",
+      "text": "View a summary of account activity, including recipes, favorites, and recent interactions."
+    }
+  },
+  "theme": {
+    "title": "Theme",
+    "paragraph": "This will only change the theme of this website, it will not affect your browser's default theme settings.",
+    "change_theme": "Change Theme",
+    "default": "Default",
+    "dark": "Dark",
+    "light": "Light",
+    "green": "Green",
+    "yellow": "Yellow",
+    "success": "The theme has been successfully changed!"
+  },
+  "delete_account": {
+    "title": "Delete Account"
+  },
+  "homepage": {
+    "title": "Homepage"
+  },
+  "language": {
+    "title": "Language",
+    "change_language": "Change Language",
+    "change": "Change",
+    "search_language": "Search Language",
+    "search": "Search",
+    "paragraph": "This will change the language for this website only; it will not affect your browser's default language settings.",
+    "success": "Language Changed Successfully!",
+    "indonesian": "Indonesian",
+    "japanese": "Japanese",
+    "english": "English",
+    "korean": "Korean"
+  },
+  "common": {
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "btn_cancel": "Cancel",
+    "btn_confirm": "Confirm",
+    "update": "Update",
+    "profile": "Profile",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "change_password": "Change Password",
+    "old": "Old",
+    "new": "New",
+    "password": "Password",
+    "none": "None",
+    "deactive": "Deactive",
+    "active": "Active",
+    "complete": "Complete",
+    "information": "Information",
+    "you": "You",
+    "username": "Username",
+    "phone_number": "Phone Number",
+    "email_address": "Email Address",
+    "gender": "Gender",
+    "add": "Add",
+    "male": "Male",
+    "female": "Female",
+    "example": "Example",
+    "prawn": "Prawn",
+    "spicy": "Spicy",
+    "seafood": "Seafood",
+    "close": "Close",
+    "reset": "Reset",
+    "done": "Done",
+    "verify": "Verify",
+    "logout": "Logout",
+    "title": {
+      "heading": "This Weeks Top Recipes",
+      "search": "Search Recipes",
+      "subsearch": "Discover delicious recipes"
+    },
+    "button_loading": {
+      "logout": "Logging Out...",
+      "login": "Logging In...",
+      "loading": "Wait a moment..."
+    },
+    "filter": {
+      "title": "Filter Recipe",
+      "recipe": {
+        "categories": {
+          "all": "All Categories",
+          "title": "Choose Categories",
+          "subtitle": "Categories"
+        },
+        "difficulty": {
+          "title": "Choose Difficulty",
+          "subtitle": "Difficulty",
+          "all": "All Difficulty",
+          "easy": "Easy",
+          "medium": "Medium",
+          "difficult": "Diffcult",
+          "very_difficult": "Very Difficult"
+        },
+        "time": {
+          "10": "10 Minutes",
+          "20": "20 Minutes",
+          "30": "30 Minutes",
+          "50": "50 Minutes",
+          "60": "1 Hours",
+          "100": "100 Minutes",
+          "title": "Choose Time",
+          "subtitle": "Time",
+          "all": "All Time"
+        },
+        "status": {
+          "title": "Choose Status",
+          "all": "All Status",
+          "pending": "Pending",
+          "draft": "Draft",
+          "accept": "Approved",
+          "reject": "Denied"
+        }
+      }
+    },
+    "footer": {
+      "about": {
+        "heading": "MCO (Morphy Cook Official) is a modern food recipe platform for finding cooking inspiration, sharing favorite recipes, and exploring a wide range of food categories from various regions and international cuisines."
+      },
+      "nav": {
+        "heading": "Navigation",
+        "home": "Home",
+        "recipes": "Recipes",
+        "categories": "Categories",
+        "favourite": "Favourite",
+        "my_profile": "My Profile",
+        "dashboard": "Dashboard",
+        "my_recipes": "My Recipes"
+      },
+      "account": {
+        "heading": "Account"
+      },
+      "explore": {
+        "heading": "Explore",
+        "trending": "Trending Recipes",
+        "healthy": "Healthy Foods",
+        "dessert": "Dessert Collection",
+        "categories": "Popular Categories"
+      }
+    },
+    "categories": {
+      "title": "Recipe Categories",
+      "subtitle": "Choose your favourite recipe"
+    },
+    "favourite": {
+      "title": "Favorite Recipes",
+      "button_detail": {
+        "title": "View Detail"
+      }
+    },
+    "no_data_found": {
+      "recipe": {
+        "empty": {
+          "title": "No Recipes Yet",
+          "subtitle": "No recipes found"
+        },
+        "search": {
+          "title": "No results found",
+          "subtitle": {
+            "recipe": "Recipe",
+            "users": "User",
+            "not_found": "not found"
+          }
+        }
+      },
+      "categories": {
+        "empty": {
+          "title": "No Categories Yet",
+          "subtitle": "No categories recipe found"
+        }
+      },
+      "favourite": {
+        "empty": {
+          "title": "No Favourite Yet",
+          "subtitle": "No favourite recipe found"
+        }
+      },
+      "users": {
+        "empty": {
+          "title": "No User Yet",
+          "subtitle": "No user data found."
+        },
+        "search": {
+          "title": "No results found",
+          "subtitle": {
+            "users": "Users",
+            "not_found": "not found"
+          }
+        }
+      }
+    },
+    "recipe": {
+      "title": "All Recipes",
+      "text_search": "Search Recipe..."
+    },
+    "navbar": {
+      "home": "Home",
+      "recipe": "All Recipes",
+      "categories": "Categories",
+      "favourite": "Favourite",
+      "profile_menu": {
+        "subtitle": "My Profile",
+        "profile": "Profile",
+        "dashboard": "Dashboard",
+        "settings": "Settings",
+        "my_recipe": "My Recipe"
+      }
+    },
+    "form_label": {
+      "title": "Title",
+      "description": "Description",
+      "time": "Time",
+      "ingredients": {
+        "title": "Ingredients",
+        "btn_add": "Add Ingredients",
+        "total": "Total Item"
+      },
+      "instructions": {
+        "title": "Instructions",
+        "btn_add": "Add Intructions",
+        "total": "Total Item"
+      },
+      "thumbnail": "Thumbnail"
+    },
+    "loading": "Loading...",
+    "form_list": {
+      "total_item": "Total items",
+      "empty": "No items yet. Add one first.",
+      "remove_item": "Remove item {{index}}"
+    },
+    "back": "Back",
+    "badge": {
+      "new": "New"
+    },
+    "pagination": {
+      "label": "Pagination navigation",
+      "prev": "Prev",
+      "next": "Next",
+      "last": "Last",
+      "page": "Page"
+    }
+  },
+  "dashboard": {
+    "admin": {
+      "recipe": {
+        "title": "List of All Recipes",
+        "filter_menu": {
+          "draft": "Draft",
+          "accept": "Approved",
+          "pending": "Pending",
+          "reject": "Rejected"
+        }
+      },
+      "users": {
+        "title": "List of Users",
+        "search": "Search for users...",
+        "filter_sort": {
+          "title": "Sort",
+          "all": "All"
+        },
+        "filter_role": {
+          "title": "Role",
+          "all": "All Role",
+          "admin": "Admin",
+          "chief": "Chef",
+          "users": "Users"
+        },
+        "filter_status": {
+          "title": "Status",
+          "all": "All Status",
+          "active": "Active",
+          "in_active": "Not Active",
+          "banned": "Banned",
+          "deletes": "Deleted"
+        },
+        "filter_verified": {
+          "title": "Verification",
+          "all": "All Verifications",
+          "verified": "Verified",
+          "in_verified": "Not Verified"
+        },
+        "edit": "Change",
+        "unbanned": "Unblock",
+        "banned": "Block",
+        "deletes": "Deleted",
+        "restore": "Restore",
+        "form": {
+          "title": "Edit User",
+          "subtitle": "Fill in the data correctly before saving changes.",
+          "username": "Username",
+          "email": "Email address",
+          "profile": "Profile URL",
+          "role": "Role",
+          "is_active": {
+            "title": "Active Status",
+            "options": {
+              "active": "Active",
+              "in_active": "Not active",
+              "banned": "Block"
+            }
+          },
+          "is_verified": {
+            "title": "Verification",
+            "options": {
+              "verified": "Verified",
+              "in_verified": "Not Yet Verified"
+            }
+          },
+          "gender": {
+            "title": "Gender",
+            "options": {
+              "male": "Male",
+              "female": "Female"
+            }
+          }
+        },
+        "role": {
+          "user": "User",
+          "admin": "Admin",
+          "chief": "Chief"
+        }
+      }
+    },
+    "chief": {
+      "recipe": {
+        "title": "My Recipes",
+        "text_search": "Search for recipes...",
+        "button": {
+          "add": "Add Recipe",
+          "edit": "Edit Recipe"
+        }
+      },
+      "dialog": {
+        "title": "Are you sure you want to delete?",
+        "subtitle": "This recipe will be permanently deleted and cannot be recovered.",
+        "button": {
+          "cancel": "Cancel",
+          "confirm": "Yes, delete"
+        }
+      }
+    },
+    "total_recipe": {
+      "title": "Total Recipes",
+      "subtitle": "Recipe"
+    },
+    "recipe_pending": {
+      "title": "Recipe Pending",
+      "subtitle": "Recipe"
+    },
+    "recipe_draft": {
+      "title": "Recipe Draft",
+      "subtitle": "Recipe"
+    },
+    "recipe_accept": {
+      "title": "Recipe Approved",
+      "subtitle": "Recipe"
+    },
+    "recipe_reject": {
+      "title": "Recipe Rejected",
+      "subtitle": "Recipe"
+    },
+    "heading": {
+      "title": "All Recipes",
+      "sublink": "See All"
+    },
+    "menu": {
+      "dashboard": "Dashboard",
+      "logout": "Log Out"
+    }
+  },
+  "login": {
+    "title": "Welcome",
+    "subtitle": "Sign in to your account",
+    "username": {
+      "title": "Username Or Email Address",
+      "subtitle": "Enter Username or Email Address"
+    },
+    "password": {
+      "title": "Password",
+      "subtitle": "Enter Password"
+    },
+    "button": {
+      "title": "Sign In"
+    },
+    "link": {
+      "title": "Don't have an account?",
+      "subtitle": "Sign Up"
+    },
+    "backToHome": "Back to Home"
+  },
+  "register": {
+    "title": "Create Account",
+    "subtitle": "Join us today",
+    "username": {
+      "title": "Username",
+      "subtitle": "Enter Username"
+    },
+    "email": {
+      "title": "Email Address",
+      "subtitle": "Enter Email Address"
+    },
+    "password": {
+      "title": "Password",
+      "subtitle": "Enter Password"
+    },
+    "conf_password": {
+      "title": "Confirm Password",
+      "subtitle": "Enter confirm Password"
+    },
+    "button": {
+      "title": "Sign Up"
+    },
+    "link": {
+      "title": "Already have an account?",
+      "subtitle": "Sign Up"
+    },
+    "backToHome": "Back to Home",
+    "password_mismatch": "Password confirmation does not match"
+  },
+  "handleMessage": {
+    "profile": {
+      "create": {
+        "success": "Your profile has been successfully updated.",
+        "error": "Failed to update profile."
+      },
+      "update": {
+        "success": "Your profile has been successfully updated.",
+        "error": "Failed to update profile."
+      }
+    },
+    "favourite": {
+      "create": {
+        "success": "Recipe successfully saved",
+        "error": "Failed to save recipe"
+      },
+      "delete": {
+        "success": "Successfully deleted the recipe.",
+        "error": "Failed to delete the recipe; please try again in a moment."
+      }
+    },
+    "2FA": {
+      "disable": {
+        "success": "2-step verification has been successfully disabled.",
+        "error": "Failed to disable 2-step verification"
+      },
+      "verify": {
+        "success": "2-step verification successfully enabled.",
+        "error": "Failed to enable 2-step verification"
+      },
+      "qrcode": {
+        "success": "Successfully loaded QR Code",
+        "error": "Failed to load QR codeks"
+      },
+      "code": {
+        "error": "The OTP code must be 6 digits."
+      }
+    },
+    "recipe": {
+      "create": {
+        "success": "Recipe successfully added.",
+        "error": "Failed to add recipe"
+      },
+      "update": {
+        "success": "Recipe successfully updated",
+        "error": "Failed to change the recipe"
+      },
+      "update_status": {
+        "success": "Prescription status successfully updated.",
+        "error": "Failed to change prescription status"
+      },
+      "delete": {
+        "success": "Recipe successfully deleted.",
+        "error": "Failed to delete recipe"
+      }
+    },
+    "avatar": {
+      "upload": {
+        "error": "Failed to upload avatar"
+      }
+    },
+    "users": {
+      "update_status": {
+        "success": "Successfully changed user status.",
+        "error": "Failed to change user status"
+      },
+      "update": {
+        "success": "Successfully updated users",
+        "error": "Failed to update users"
+      },
+      "delete": {
+        "success": "Successfully deleted users",
+        "error": "Failed to delete users"
+      }
+    },
+    "auth": {
+      "login": {
+        "success": "Login successfully",
+        "error": "Failed to log in to the account"
+      },
+      "register": {
+        "success": "Account successfully created",
+        "error": "Failed to create an account"
+      },
+      "password": {
+        "success": "Password successfully changed",
+        "error": "Failed to change password"
+      },
+      "logout": {
+        "success": "Logout successfully",
+        "error": "Failed to log out of the account"
+      }
+    },
+    "form": {
+      "required": "field is required!"
+    },
+    "mockup": {
+      "auth_not_login": "You are not logged in",
+      "auth_user_not_found": "User not found!",
+      "auth_invalid_credentials": "Invalid demo account!",
+      "auth_password_wrong": "Wrong password!",
+      "auth_banned": "Your account is banned",
+      "auth_deleted": "Your account is deleted",
+      "auth_email_exists": "Email address already in use!",
+      "auth_username_exists": "Username already in use!",
+      "auth_password_mismatch": "Passwords do not match!",
+      "auth_old_password_wrong": "Old password is incorrect",
+      "auth_2fa_secret_not_found": "2FA secret not found!",
+      "auth_2fa_code_wrong": "Verification code is incorrect!",
+      "user_not_found": "User not found!",
+      "user_admin_cannot_update": "Admin user cannot be updated!",
+      "user_admin_cannot_change_status": "Admin user status cannot be changed!",
+      "user_admin_cannot_delete_ban": "Admin user cannot be deleted or banned!",
+      "user_status_updated": "User status updated successfully",
+      "user_deleted": "User deleted successfully",
+      "recipe_not_found": "Recipe not found!",
+      "recipe_exists": "Recipe already added!",
+      "recipe_add_success": "Recipe added successfully.",
+      "recipe_update_success": "Recipe updated successfully!",
+      "recipe_delete_success": "Recipe deleted successfully!",
+      "recipe_approved": "Recipe approved",
+      "recipe_rejected": "Recipe rejected",
+      "recipe_drafted": "Recipe drafted",
+      "recipe_not_chef": "You cannot add recipes",
+      "recipe_not_chef_update": "You are not authorized to update this recipe.",
+      "recipe_not_chef_delete": "You cannot delete this recipe!",
+      "category_empty": "Category is empty",
+      "category_not_found": "Category not found!",
+      "category_deleted": "Category deleted successfully",
+      "favourite_not_login": "You are not logged in!",
+      "favourite_exists": "Recipe already added!",
+      "favourite_add_success": "Recipe added successfully",
+      "favourite_not_found": "Favourite recipe not found!",
+      "favourite_delete_success": "Favourite recipe deleted successfully",
+      "profile_not_login": "You are not logged in!",
+      "profile_exists": "Profile already exists!",
+      "profile_not_found": "Profile not found!",
+      "upload_not_login": "You are not logged in!",
+      "upload_success": "Avatar uploaded successfully",
+      "two_fa_secret_not_found": "Secret not found!",
+      "two_fa_code_wrong": "Verification code is incorrect!",
+      "two_fa_enabled": "2FA activated successfully",
+      "two_fa_disabled": "2FA deactivated successfully",
+      "validation_empty": "{field} cannot be empty!",
+      "validation_current_password_empty": "Current password cannot be empty!",
+      "validation_new_password_empty": "New password cannot be empty!",
+      "validation_confirm_password_empty": "Confirm Password cannot be empty!",
+      "validation_password_mismatch": "New Password and Confirm Password do not match!",
+      "profile_date_required": "Date of birth is required!"
+    },
+    "upload": {
+      "invalid_type": "File must be an image!",
+      "too_large": "Maximum file size is 2MB!",
+      "failed": "Failed to read file."
+    },
+    "review": {
+      "create": {
+        "success": "Review created successfully!",
+        "error": "Failed to create review."
+      },
+      "update": {
+        "success": "Review updated successfully!",
+        "error": "Failed to update review."
+      },
+      "delete": {
+        "success": "Review deleted successfully!",
+        "error": "Failed to delete review."
+      }
+    }
+  },
+  "handleError": {
+    "network_error": {
+      "title": "Server Cannot Be Reached",
+      "message": "Sorry, the application is experiencing issues. Please try again later."
+    },
+    "errorBoundary": {
+      "404": {
+        "title": "Page not found.",
+        "message": "The page you are looking for is not available."
+      },
+      "500": {
+        "title": "Server Error",
+        "message": "A server problem occurred. Please try again later."
+      },
+      "default": {
+        "title": "Something Wrong",
+        "message": "An error occurred in the application."
+      }
+    },
+    "button": {
+      "retry": "Try again",
+      "back": "Return to Home"
+    }
+  },
+  "upload": {
+    "dropzone": {
+      "hint": "Click or drag & drop image",
+      "formats": "PNG, JPG, WEBP (max 2MB)"
+    },
+    "replace": "Replace Image",
+    "remove": "Remove image",
+    "preview": "Image preview"
+  },
+  "banned_account": {
+    "title": "Your Account Has Been Suspended",
+    "subtitle": "Please contact the administrator for further information."
+  },
+  "detail": {
+    "ingredients": "Ingredients",
+    "steps": "Steps",
+    "minutes": "minutes",
+    "review": {
+      "title": "Reviews",
+      "rating_label": "Rating (1-5)",
+      "comment_label": "Comment",
+      "comment_placeholder": "Write your comment... (max 1000 characters)",
+      "form_title": "Write your review",
+      "edit_title": "Edit your review",
+      "button_submit": "Submit Review",
+      "button_update": "Save Changes",
+      "empty": "No reviews yet. Be the first!",
+      "login_hint": "Login to write a review.",
+      "count_suffix": "reviews",
+      "page_info": "Page {current} of {total} ({count} reviews)",
+      "new_label": "New"
+    }
+  },
+  "carousel": {
+    "recipe_image": "Recipe image",
+    "previous": "Previous image",
+    "next": "Next image",
+    "go_to": "Go to image {{index}}"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalid_type": "Invalid format",
+    "too_small": "Must be at least {{min}} characters",
+    "too_big": "Must be at most {{max}} characters",
+    "invalid_format": "Invalid format",
+    "not_multiple_of": "Invalid value",
+    "invalid_value": "Invalid value",
+    "mismatch": "Confirmation does not match {{field}}",
+    "same_as_old": "New password must be different from the old one",
+    "future_date": "Date cannot be in the future",
+    "password_hint": "At least {{min}} characters, including uppercase, lowercase, and a number"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: October 2026",
+      "section1_title": "1. Data we collect",
+      "section1_body": "We store account data (username, email, encrypted password), profiles, recipes, favourites, and reviews you create. In demo mode, data is stored in your browser's IndexedDB.",
+      "section2_title": "2. How we use data",
+      "section2_body": "Data is used to run the app: login, showing recipes, favourites, and reviews. We do not sell your data to third parties.",
+      "section3_title": "3. Cookies and tokens",
+      "section3_body": "Login uses JWT tokens stored in httpOnly cookies (server mode) or localStorage (demo mode). Tokens identify your login session.",
+      "section4_title": "4. Data sharing",
+      "section4_body": "We do not share your personal data except when required by law or to operate the service (e.g. hosting).",
+      "section5_title": "5. Security",
+      "section5_body": "Passwords are stored encrypted and API access is token-protected. No system is 100% secure; use a strong, unique password.",
+      "section6_title": "6. Your rights",
+      "section6_body": "You can update your profile and delete your account at any time. Deleted accounts can no longer be used to log in.",
+      "section7_title": "7. Contact",
+      "section7_body": "Privacy questions can be sent through the support channel where this product was obtained."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "updated": "Last updated: October 2026",
+      "section1_title": "1. Acceptance",
+      "section1_body": "By using MCO (Morphy Cook Official), you agree to these terms. If you disagree, do not use the app.",
+      "section2_title": "2. License",
+      "section2_body": "The basic open-source package is MIT licensed: free to use, modify, and distribute with copyright notice. Pro/custom packages follow their own commercial licenses.",
+      "section3_title": "3. Accounts and responsibility",
+      "section3_body": "You are responsible for keeping your account and password safe. Activity through your account is considered yours.",
+      "section4_title": "4. User content",
+      "section4_body": "Recipes and reviews you write remain yours, but you grant us permission to display them in the app. Admins may reject or remove violating content.",
+      "section5_title": "5. Prohibitions",
+      "section5_body": "Abuse is prohibited: hacking, spam, uploading illegal/hateful/explicit content, or harassing other users.",
+      "section6_title": "6. As-is service",
+      "section6_body": "The service is provided as-is without bug-free guarantees. We may change or discontinue features at any time.",
+      "section7_title": "7. Changes",
+      "section7_body": "Terms may be updated as the app evolves. The latest version is always shown on this page."
+    }
+  }
+}

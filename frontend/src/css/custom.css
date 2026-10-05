@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  transform: translateX(100%);
+}
+
+.navbar.show {
+  animation: navbarShow 0.5s ease forwards;
+}
+
+.navbar.hide {
+  animation: navbarHidden 0.2s ease forwards;
+}
+
+@keyframes navbarShow {
+  0% {
+    transform: translateX(200%);
+  }
+
+  50% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes navbarHidden {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}

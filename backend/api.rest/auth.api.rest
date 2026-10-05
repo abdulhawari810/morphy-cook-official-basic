@@ -1,0 +1,33 @@
+# CONTOH request untuk dicoba lokal. Ganti token setelah login. Jangan commit token asli.
+@base = http://localhost:5010/api/
+@contentType = application/json
+@token = PASTE_TOKEN_DISINI_SETELAH_LOGIN
+@RefreshToken = PASTE_TOKEN_DISINI_SETELAH_LOGIN
+### Register
+POST {{base}}auth/register
+Content-Type: {{contentType}}
+
+{
+    "email": "contoh@domain.com",
+    "password": "Password123!",
+    "confPassword": "Password123!",
+    "username": "Abdulhawari"
+}
+
+### Login
+POST {{base}}auth/login
+Content-Type: {{contentType}}
+
+{
+    "UsersOrEmail": "contoh@domain.com",
+    "password": "Password123!"
+}
+
+### Me
+GET {{base}}auth/me
+Content-Type: {{contentType}}
+Authorization: Bearer {{RefreshToken}}
+
+### Logout
+DELETE {{base}}auth/logout
+Authorization: Bearer {{token}}

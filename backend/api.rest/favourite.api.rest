@@ -1,0 +1,31 @@
+# CONTOH request untuk dicoba lokal. Ganti token setelah login. Jangan commit token asli.
+@base = http://localhost:5010/api/
+@contentType = application/json
+@RefreshToken= PASTE_TOKEN_DISINI_SETELAH_LOGIN
+@AccessToken= PASTE_TOKEN_DISINI_SETELAH_LOGIN
+
+### Login
+POST {{base}}auth/login
+Content-Type: {{contentType}}
+
+{
+    "UsersOrEmail": "contoh@domain.com",
+    "password": "Password123!"
+}
+
+### get favourite
+GET {{base}}favourite/
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}
+
+
+### create favourite
+POST {{base}}favourite/create/4
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}
+
+
+### create favourite
+DELETE {{base}}favourite/delete/3
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}

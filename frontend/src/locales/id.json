@@ -1,0 +1,816 @@
+{
+  "security": {
+    "title": "Keamanan",
+    "password": {
+      "title": "Kata Sandi",
+      "text": "Ubah kata sandi untuk menjaga keamanan akun."
+    },
+    "two_step_verification": {
+      "title": "Verifikasi 2 Langkah",
+      "text": "Gunakan kode verifikasi tambahan saat login.",
+      "last_active": "Terakhir diaktifkan",
+      "button": {
+        "next": "Lanjut isi kode",
+        "verification": "Verifikasi Kode",
+        "verifying": "Sedang Memverifikasi...",
+        "disable": "Ya, Nonaktifkan",
+        "cancel": "Batalkan"
+      },
+      "toast": {
+        "code_required": "Kode OTP harus 6 digit"
+      },
+      "modal": {
+        "title": "Apakah anda yakin ingin menonaktifkan?",
+        "subtitle": "Apakah anda menonaktifkan verifikasi 2 langkah?"
+      }
+    },
+    "delete_account": {
+      "title": "Hapus Akun",
+      "text": "Menghapus akun sementara.",
+      "modal": {
+        "title": "Apakah anda yakin ingin menghapus?",
+        "subtitle": "Akun Anda akan dihapus, tetapi anda bisa mengambil kembali akun ada"
+      },
+      "button": {
+        "cancel": "Batalkan",
+        "yes_delete": "Ya, Hapus!"
+      }
+    },
+    "2_factor": {
+      "title": "Pengaturan Keamanan",
+      "title_header": "Aktifkan Otentikasi Dua Faktor",
+      "paragraph_header": "Amankan akun Anda dengan lapisan perlindungan tambahan. Pindai kode untuk menghubungkan identitas Anda dengan 2FAS Auth aplikasi.",
+      "step1": {
+        "text": "Buka",
+        "text2": "Aplikasi Otentikasi 2FAS",
+        "text3": "(atau otentikasi pilihan Anda) di ponsel Anda perangkat."
+      },
+      "step2": {
+        "text": "Ketuk",
+        "text2": "tombol dan pilih",
+        "text3": "Pindai Kode QR"
+      },
+      "text_animation": "Menunggu koneksi",
+      "qrcode_alt": "QR Code verifikasi 2 langkah",
+      "qr_unavailable": "QR code tidak bisa ditampilkan. Tutup dialog lalu coba lagi.",
+      "manual_secret": "Tidak bisa memindai? Masukkan kode ini manual",
+      "tab_scan": "Pindai QR",
+      "tab_enter_code": "Masukkan Kode",
+      "enter_code_button": "Masukkan Kode OTP"
+    },
+    "verify_2_factor": {
+      "title": "Masukkan Kode Verifikasi",
+      "paragraph": "Kami telah mengirimkan kode 6 digit ke perangkat Anda yang terdaftar. Silakan masukkan di bawah untuk melanjutkan identitas Anda.",
+      "modal": {
+        "title": "Verifikasi kode OTP",
+        "subtitle": "Konfirmasi kode OTP",
+        "subtext": "Masukkan kode OTP yang ada di aplikasi 2FAS anda",
+        "button": {
+          "cancel": "Batalkan",
+          "verification": "Verifikasi Kode",
+          "verifying": "Sedang Memverifikasi..."
+        }
+      },
+      "button": {
+        "verify": "Verifikasi Kode"
+      }
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "cooking_level": "Tingkat Memasak",
+    "cooking_paragraph": "Pilih tingkat kemampuan memasak kamu",
+    "select_skill": "Pilih Skill",
+    "preference_food": "Preferensi Makanan",
+    "alergi_food": "Alergi Makanan",
+    "add_input": "Tambah Input",
+    "toast_preference_food": "Preferensi makanan tidak boleh kosong!",
+    "loading_save": "Menyimpan...",
+    "date": "Tanggal lahir Anda diperlukan.",
+    "avatar": "Foto profil",
+    "birth_date": "Tanggal lahir",
+    "birth_date_clear": "Hapus",
+    "birth_date_today": "Hari ini"
+  },
+  "notification": {
+    "title": "Notifikasi",
+    "security_alert": {
+      "title": "Peringatan Keamanan",
+      "text": "Terima notifikasi saat ada aktivitas mencurigakan, login baru, atau perubahan keamanan akun."
+    },
+    "email_update": {
+      "title": "Pembaruan Email",
+      "text": "Dapatkan informasi terbaru melalui email mengenai akun dan aktivitas penting Anda."
+    },
+    "recipe_update": {
+      "title": "Pembaruan Resep",
+      "text": "Terima pemberitahuan ketika resep favorit atau resep yang Anda ikuti mendapatkan pembaruan."
+    },
+    "activity_summary": {
+      "title": "Ringkasan Aktivitas",
+      "text": "Lihat ringkasan aktivitas akun, termasuk resep, favorit, dan interaksi terbaru."
+    }
+  },
+  "theme": {
+    "title": "Tema",
+    "paragraph": "Ini hanya akan mengubah tema situs web ini, itu tidak akan mempengaruhi pengaturan tema default browser Anda.",
+    "change_theme": "Ubah Tema",
+    "default": "Bawaan",
+    "dark": "Gelap",
+    "green": "Hijau",
+    "light": "Terang",
+    "yellow": "Kuning",
+    "success": "Tema berhasil diubah!"
+  },
+  "delete_account": {
+    "title": "Hapus Akun"
+  },
+  "homepage": {
+    "title": "Beranda"
+  },
+  "language": {
+    "title": "Bahasa",
+    "change_language": "Ganti Bahasa",
+    "change": "Ganti",
+    "search_language": "Cari Bahasa",
+    "search": "Cari",
+    "paragraph": "Ini hanya akan mengubah bahasa situs web ini, itu tidak akan mempengaruhi pengaturan bahasa default browser Anda.",
+    "success": "Bahasa Berhasil Diubah!",
+    "indonesian": "Indonesia",
+    "japanese": "Jepang",
+    "english": "Inggris",
+    "korean": "Korea"
+  },
+  "common": {
+    "save": "Simpan",
+    "btn_cancel": "Batalkan",
+    "btn_confirm": "Konfirmasi",
+    "confirm": "Konfirmasi",
+    "delete": "Hapus",
+    "edit": "Ubah",
+    "update": "Perbarui",
+    "profile": "Profil",
+    "cancel": "Batal",
+    "change_password": "Ubah Kata Sandi",
+    "old": "Lama",
+    "new": "Baru",
+    "password": "Kata Sandi",
+    "none": "Tidak Ada",
+    "deactive": "Tidak Aktif",
+    "active": "Aktif",
+    "complete": "Lengkapi",
+    "information": "Informasi",
+    "you": "Kamu",
+    "username": "Nama Pengguna",
+    "phone_number": "Nomor Telepon",
+    "email_address": "Alamat Email",
+    "gender": "Jenis Kelamin",
+    "add": "Tambah",
+    "male": "Laki Laki",
+    "female": "Perempuan",
+    "example": "Contoh",
+    "prawn": "Udang",
+    "spicy": "Pedas",
+    "seafood": "Makanan Laut",
+    "close": "Tutup",
+    "reset": "Reset",
+    "done": "Selesai",
+    "verify": "Periksa",
+    "logout": "Keluar Akun",
+    "title": {
+      "heading": "Resep Terbaik Minggu Ini",
+      "search": "Pencarian Resep",
+      "subsearch": "Temukan resep-resep lezat"
+    },
+    "button_loading": {
+      "logout": "Sedang Logout...",
+      "login": "Sedang Login...",
+      "loading": "Tunggu Sebentar..."
+    },
+    "filter": {
+      "title": "Filter Resep",
+      "recipe": {
+        "categories": {
+          "all": "Semua Kategori",
+          "title": "Pilih Kategori",
+          "subtitle": "Kategori"
+        },
+        "difficulty": {
+          "title": "Pilih Tingkat Memasak",
+          "subtitle": "Tingkat Memasak",
+          "all": "Semua Tingkat",
+          "easy": "Mudah",
+          "medium": "Sedang",
+          "difficult": "Sulit",
+          "very_difficult": "Sangat Sulit"
+        },
+        "time": {
+          "10": "10 Menit",
+          "20": "20 Menit",
+          "30": "30 Menit",
+          "50": "50 Menit",
+          "60": "1 Jam",
+          "100": "100 Menit",
+          "title": "Pilih Waktu Memasak",
+          "subtitle": "Waktu Memasak",
+          "all": "Semua Waktu"
+        },
+        "status": {
+          "title": "Pilih Status",
+          "all": "Semua Status",
+          "pending": "Pending",
+          "draft": "Draft",
+          "accept": "Disetujui",
+          "reject": "Ditolak"
+        }
+      }
+    },
+    "footer": {
+      "about": {
+        "heading": "MCO ( Morphy Cook Official ) adalah platform resep makanan modern untuk menemukan inspirasi masakan, berbagi resep favorit, dan mengeksplor berbagai kategori makanan dari berbagai daerah maupun internasional."
+      },
+      "nav": {
+        "heading": "Navigasi",
+        "home": "Beranda",
+        "recipes": "Resep",
+        "categories": "Kategori",
+        "favourite": "Favorit",
+        "my_profile": "Profil Saya",
+        "dashboard": "Dasbor",
+        "my_recipes": "Resep Saya"
+      },
+      "account": {
+        "heading": "Akun"
+      },
+      "explore": {
+        "heading": "Jelajahi",
+        "trending": "Resep Populer",
+        "healthy": "Makanan Sehat",
+        "dessert": "Koleksi Dessert",
+        "categories": "Kategori Populer"
+      }
+    },
+    "categories": {
+      "title": "Kategori Resep",
+      "subtitle": "Pilih kategori favorit kamu"
+    },
+    "favourite": {
+      "title": "Resep Favorit",
+      "button_detail": {
+        "title": "Lihat Detail"
+      }
+    },
+    "no_data_found": {
+      "recipe": {
+        "empty": {
+          "title": "Resep masih kosong",
+          "subtitle": "Tidak ada resep ditemukan"
+        },
+        "search": {
+          "title": "Pencarian tidak ditemukan",
+          "subtitle": {
+            "recipe": "Resep",
+            "not_found": "tidak ditemukan",
+            "users": "Pengguna"
+          }
+        }
+      },
+      "categories": {
+        "empty": {
+          "title": "Kategori masih kosong",
+          "subtitle": "Tidak ada kategori resep ditemukan"
+        }
+      },
+      "favourite": {
+        "empty": {
+          "title": "Favourite masih kosong",
+          "subtitle": "Tidak ada favourite resep ditemukan"
+        }
+      },
+      "users": {
+        "empty": {
+          "title": "Data Pengguna masih kosong",
+          "subtitle": "Tidak ada data pengguna ditemukan."
+        },
+        "search": {
+          "title": "Pencarian tidak ditemukan",
+          "subtitle": {
+            "users": "Pengguna",
+            "not_found": "tidak ditemukan"
+          }
+        }
+      }
+    },
+    "recipe": {
+      "title": "Semua Resep",
+      "text_search": "Cari Resep..."
+    },
+    "navbar": {
+      "home": "Beranda",
+      "recipe": "Semua Resep",
+      "categories": "Kategori",
+      "favourite": "Favourite",
+      "profile_menu": {
+        "subtitle": "Profil Saya",
+        "profile": "Profil",
+        "dashboard": "Dashboard",
+        "settings": "Pengaturan",
+        "my_recipe": "Resep Saya"
+      }
+    },
+    "form_label": {
+      "title": "Judul",
+      "description": "Deskripsi",
+      "time": "Waktu",
+      "ingredients": {
+        "title": "Bahan-bahan",
+        "btn_add": "Tambah Bahan",
+        "total": "Jumlah Item"
+      },
+      "instructions": {
+        "title": "Instruksi",
+        "btn_add": "Tambah Intruksi",
+        "total": "Jumlah Item"
+      },
+      "thumbnail": "Gambar"
+    },
+    "loading": "Memuat...",
+    "form_list": {
+      "total_item": "Total item",
+      "empty": "Belum ada item. Tambahkan dulu.",
+      "remove_item": "Hapus item ke-{{index}}"
+    },
+    "back": "Kembali",
+    "badge": {
+      "new": "Baru"
+    },
+    "pagination": {
+      "label": "Navigasi halaman",
+      "prev": "Sebelumnya",
+      "next": "Berikutnya",
+      "last": "Akhir",
+      "page": "Halaman"
+    }
+  },
+  "dashboard": {
+    "admin": {
+      "recipe": {
+        "title": "Daftar Semua Resep",
+        "filter_menu": {
+          "draft": "Draft",
+          "accept": "Disetujui",
+          "pending": "Pending",
+          "reject": "Ditolak"
+        }
+      },
+      "users": {
+        "title": "Daftar Users",
+        "search": "Cari Pengguna...",
+        "filter_sort": {
+          "title": "Urutkan",
+          "all": "Semua"
+        },
+        "filter_role": {
+          "title": "Peran",
+          "all": "Semua Peran",
+          "admin": "Admin",
+          "chief": "Chef",
+          "users": "Users"
+        },
+        "filter_status": {
+          "title": "Status",
+          "all": "Semua Status",
+          "active": "Aktif",
+          "in_active": "Tidak Aktif",
+          "banned": "Di Blokir",
+          "deletes": "Dihapus"
+        },
+        "filter_verified": {
+          "title": "Verifikasi",
+          "all": "Semua Verifikasi",
+          "verified": "Sudah Verifikasi",
+          "in_verified": "Tidak Verifikasi"
+        },
+        "edit": "Ubah",
+        "unbanned": "Buka Blokir",
+        "banned": "Blokir",
+        "deletes": "Dihapus",
+        "restore": "Pulihkan",
+        "form": {
+          "title": "Ubah Pengguna",
+          "subtitle": "Lengkapi data dengan benar sebelum menyimpan perubahan.",
+          "username": "Username",
+          "email": "Alamat Email",
+          "profile": "Profil URL",
+          "role": "Peran",
+          "is_active": {
+            "title": "Status Aktif",
+            "options": {
+              "active": "Aktif",
+              "in_active": "Tidak Aktif",
+              "banned": "Blokir"
+            }
+          },
+          "is_verified": {
+            "title": "Verifikasi",
+            "options": {
+              "verified": "Sudah Verifikasi",
+              "in_verified": "Belum Verifikasi"
+            }
+          },
+          "gender": {
+            "title": "Jenis Kelamin",
+            "options": {
+              "male": "laki-laki",
+              "female": "Perempuan"
+            }
+          }
+        },
+        "role": {
+          "user": "User",
+          "admin": "Admin",
+          "chief": "Chief"
+        }
+      }
+    },
+    "chief": {
+      "recipe": {
+        "title": "Resep Saya",
+        "text_search": "Cari Resep...",
+        "button": {
+          "add": "Tambah Resep",
+          "edit": "Ubah Resep"
+        }
+      },
+      "dialog": {
+        "title": "Apakah anda yakin ingin menghapus?",
+        "subtitle": "resep ini akan dihapus permanen dan tidak dapat kembali.",
+        "button": {
+          "cancel": "Batalkan",
+          "confirm": "Ya, Hapus"
+        }
+      }
+    },
+    "total_recipe": {
+      "title": "Total Resep",
+      "subtitle": "Resep"
+    },
+    "recipe_pending": {
+      "title": "Resep Tertunda",
+      "subtitle": "Resep"
+    },
+    "recipe_draft": {
+      "title": "Resep Draft",
+      "subtitle": "Resep"
+    },
+    "recipe_accept": {
+      "title": "Resep Disetujui",
+      "subtitle": "Resep"
+    },
+    "recipe_reject": {
+      "title": "Resep Ditolak",
+      "subtitle": "Resep"
+    },
+    "heading": {
+      "title": "Semua Resep",
+      "sublink": "Lihat Semua"
+    },
+    "menu": {
+      "dashboard": "Dashboard",
+      "logout": "Keluar"
+    }
+  },
+  "login": {
+    "title": "Selamat Datang",
+    "subtitle": "Masuk ke akun anda",
+    "username": {
+      "title": "Username atau Alamat Email",
+      "subtitle": "Masukkan Username atau Alamat Email"
+    },
+    "password": {
+      "title": "Kata Sandi",
+      "subtitle": "Masukkan kata sandi"
+    },
+    "button": {
+      "title": "Masuk"
+    },
+    "link": {
+      "title": "Belum punya akun?",
+      "subtitle": "Buat Akun"
+    },
+    "backToHome": "Kembali ke Beranda"
+  },
+  "register": {
+    "title": "Buat Akun",
+    "subtitle": "Bergabung dengan kami hari ini",
+    "username": {
+      "title": "Username",
+      "subtitle": "Masukkan Username"
+    },
+    "email": {
+      "title": "Alamat Email",
+      "subtitle": "Masukkan Alamat Email"
+    },
+    "password": {
+      "title": "Kata Sandi",
+      "subtitle": "Masukkan kata sandi"
+    },
+    "conf_password": {
+      "title": "Konfirmasi Kata Sandi",
+      "subtitle": "Masukkan konfirmasi kata sandi"
+    },
+    "button": {
+      "title": "Buat Akun"
+    },
+    "link": {
+      "title": "Sudah punya akun?",
+      "subtitle": "Masuk Ke Akun"
+    },
+    "backToHome": "Kembali ke Beranda",
+    "password_mismatch": "Konfirmasi kata sandi tidak cocok"
+  },
+  "handleMessage": {
+    "profile": {
+      "create": {
+        "success": "Profil Anda telah berhasil diperbarui.",
+        "error": "Gagal memperbarui profil."
+      },
+      "update": {
+        "success": "Profil Anda telah berhasil diperbarui.",
+        "error": "Gagal memperbarui profil."
+      }
+    },
+    "favourite": {
+      "create": {
+        "success": "Resep berhasil disimpan",
+        "error": "Gagal menyimpan resep"
+      },
+      "delete": {
+        "success": "Berhasil menghapus resep",
+        "error": "Gagal menghapus resep, coba lagi beberapa saat"
+      }
+    },
+    "2FA": {
+      "disable": {
+        "success": "Verifikasi 2 langkah berhasil dinonaktifkan.",
+        "error": "Gagal menonaktifkan verifikasi 2 langkah"
+      },
+      "verify": {
+        "success": "Verifikasi 2 langkah berhasil diaktifkan",
+        "error": "Gagal mengaktifkan verifikasi 2 langkah"
+      },
+      "qrcode": {
+        "success": "Berhasil memuat QR Code",
+        "error": "Gagal memuat QR Code"
+      },
+      "code": {
+        "error": "Kode OTP harus 6 digit"
+      }
+    },
+    "recipe": {
+      "create": {
+        "success": "resep berhasil ditambahkan",
+        "error": "Gagal menambah resep"
+      },
+      "update": {
+        "success": "Resep berhasil diubah",
+        "error": "Gagal mengubah resep"
+      },
+      "update_status": {
+        "success": "Status Resep berhasil diubah",
+        "error": "Gagal mengubah status resep"
+      },
+      "delete": {
+        "success": "Resep berhasil dihapus",
+        "error": "Gagal menghapus resep"
+      }
+    },
+    "avatar": {
+      "upload": {
+        "error": "Gagal mengupload avatar"
+      }
+    },
+    "users": {
+      "update_status": {
+        "success": "Berhasil mengubah status users",
+        "error": "Gagal mengubah status users"
+      },
+      "update": {
+        "success": "Berhasil mengubah users",
+        "error": "Gagal mengubah users"
+      },
+      "delete": {
+        "success": "Berhasil menghapus users",
+        "error": "Gagal menghapus users"
+      }
+    },
+    "auth": {
+      "login": {
+        "success": "Login berhasil",
+        "error": "Gagal login ke akun"
+      },
+      "register": {
+        "success": "Berhasil membuat akun",
+        "error": "Gagal membuat akun"
+      },
+      "password": {
+        "success": "Berhasil mengubah kata sandi",
+        "error": "Gagal mengubah kata sandi"
+      },
+      "logout": {
+        "success": "Logout berhasil",
+        "error": "Gagal keluar dari akun"
+      }
+    },
+    "form": {
+      "required": "Input tidak boleh kosong!"
+    },
+    "mockup": {
+      "auth_not_login": "Anda belum login",
+      "auth_user_not_found": "User tidak ditemukan!",
+      "auth_invalid_credentials": "Akun demo salah!",
+      "auth_password_wrong": "Password Salah!",
+      "auth_banned": "Akun anda dibanned",
+      "auth_deleted": "Akun anda dihapus",
+      "auth_email_exists": "Alamat Email sudah digunakan!",
+      "auth_username_exists": "Username sudah digunakan!",
+      "auth_password_mismatch": "Kata sandi dan Konfirmasi kata sandi tidak sama!",
+      "auth_old_password_wrong": "Password lama salah",
+      "auth_2fa_secret_not_found": "Secret 2FA tidak ditemukan!",
+      "auth_2fa_code_wrong": "Kode verifikasi salah!",
+      "user_not_found": "User tidak ditemukan!",
+      "user_admin_cannot_update": "User admin tidak dapat diubah!",
+      "user_admin_cannot_change_status": "Status user admin tidak dapat diubah!",
+      "user_admin_cannot_delete_ban": "User admin tidak dapat dihapus atau dibanned!",
+      "user_status_updated": "Status user berhasil diupdated",
+      "user_deleted": "User berhasil dihapus",
+      "recipe_not_found": "Resep tidak ditemukan!",
+      "recipe_exists": "Resep ini sudah ditambahkan!",
+      "recipe_add_success": "Resep berhasil ditambahkan.",
+      "recipe_update_success": "Resep berhasil diubah!",
+      "recipe_delete_success": "Resep berhasil dihapus!",
+      "recipe_approved": "Resep berhasil disetujui",
+      "recipe_rejected": "Resep berhasil ditolak",
+      "recipe_drafted": "Resep berhasil didraft",
+      "recipe_not_chef": "Anda tidak bisa menambah resep",
+      "recipe_not_chef_update": "Anda tidak berhak untuk mengupdate resep ini.",
+      "recipe_not_chef_delete": "Anda tidak bisa menghapus resep ini!",
+      "category_empty": "Category masih kosong",
+      "category_not_found": "Category tidak ditemukan!",
+      "category_deleted": "Category berhasil dihapus",
+      "favourite_not_login": "Kamu belum login!",
+      "favourite_exists": "Resep ini sudah ditambahkan!",
+      "favourite_add_success": "Resep berhasil ditambahkan",
+      "favourite_not_found": "Favourite Resep tidak ditemukan!",
+      "favourite_delete_success": "Favourite Resep berhasil dihapus",
+      "profile_not_login": "Anda belum login!",
+      "profile_exists": "Profile sudah ada!",
+      "profile_not_found": "Profile tidak ditemukan!",
+      "upload_not_login": "Anda belum login!",
+      "upload_success": "Avatar berhasil diupload",
+      "two_fa_secret_not_found": "Secret tidak ditemukan!",
+      "two_fa_code_wrong": "Kode verifikasi salah!",
+      "two_fa_enabled": "2FA berhasil diaktifkan",
+      "two_fa_disabled": "2FA berhasil dinonaktifkan",
+      "validation_empty": "{field} tidak boleh kosong!",
+      "validation_current_password_empty": "Kata sandi saat ini tidak boleh kosong!",
+      "validation_new_password_empty": "Kata sandi baru tidak boleh kosong!",
+      "validation_confirm_password_empty": "Konfirmasi Kata sandi tidak boleh kosong!",
+      "validation_password_mismatch": "Kata sandi baru dan Konfirmasi Kata sandi tidak sama!",
+      "profile_date_required": "Tanggal lahir wajib diisi!"
+    },
+    "upload": {
+      "invalid_type": "File harus berupa gambar!",
+      "too_large": "Ukuran file maksimal 2MB!",
+      "failed": "Gagal membaca file."
+    },
+    "review": {
+      "create": {
+        "success": "Review berhasil dibuat!",
+        "error": "Gagal membuat review."
+      },
+      "update": {
+        "success": "Review berhasil diubah!",
+        "error": "Gagal mengubah review."
+      },
+      "delete": {
+        "success": "Review berhasil dihapus!",
+        "error": "Gagal menghapus review."
+      }
+    }
+  },
+  "handleError": {
+    "network_error": {
+      "title": "Server Tidak Dapat Dihubungi",
+      "message": "Maaf, aplikasi sedang mengalami gangguan. Silakan coba lagi beberapa saat kemudian."
+    },
+    "errorBoundary": {
+      "404": {
+        "title": "Halaman tidak ditemukan.",
+        "message": "Halmanan yang kamu cari tidak tersedia"
+      },
+      "500": {
+        "title": "Server Error",
+        "message": "Terjadi masalah pada server. Silahkan coba lagi nanti.."
+      },
+      "default": {
+        "title": "Ada masalah",
+        "message": "Terjadi kesalahan pada aplikasi."
+      }
+    },
+    "button": {
+      "retry": "Coba Lagi",
+      "back": "Kembali ke Home"
+    }
+  },
+  "upload": {
+    "dropzone": {
+      "hint": "Klik atau tarik & lepas gambar",
+      "formats": "PNG, JPG, WEBP (maks 2MB)"
+    },
+    "replace": "Ganti Gambar",
+    "remove": "Hapus gambar",
+    "preview": "Pratinjau gambar"
+  },
+  "banned_account": {
+    "title": "Akun Anda Diblokir",
+    "subtitle": "Silakan hubungi administrator untuk informasi lebih lanjut."
+  },
+  "detail": {
+    "ingredients": "Bahan",
+    "steps": "Langkah",
+    "minutes": "menit",
+    "review": {
+      "title": "Ulasan",
+      "rating_label": "Rating (1-5)",
+      "comment_label": "Komentar",
+      "comment_placeholder": "Tulis komentarmu... (maks 1000 karakter)",
+      "form_title": "Tulis ulasanmu",
+      "edit_title": "Ubah ulasanmu",
+      "button_submit": "Kirim Review",
+      "button_update": "Simpan Perubahan",
+      "empty": "Belum ada ulasan. Jadilah yang pertama!",
+      "login_hint": "Login untuk memberi ulasan.",
+      "count_suffix": "ulasan",
+      "page_info": "Halaman {current} dari {total} ({count} ulasan)",
+      "new_label": "Baru"
+    }
+  },
+  "carousel": {
+    "recipe_image": "Gambar resep",
+    "previous": "Gambar sebelumnya",
+    "next": "Gambar berikutnya",
+    "go_to": "Ke gambar {{index}}"
+  },
+  "validation": {
+    "required": "Wajib diisi",
+    "invalid_type": "Format tidak valid",
+    "too_small": "Minimal {{min}} karakter",
+    "too_big": "Maksimal {{max}} karakter",
+    "invalid_format": "Format tidak sesuai",
+    "not_multiple_of": "Nilai tidak sesuai",
+    "invalid_value": "Nilai tidak valid",
+    "mismatch": "Konfirmasi tidak cocok dengan {{field}}",
+    "same_as_old": "Kata sandi baru harus berbeda dari yang lama",
+    "future_date": "Tanggal tidak boleh di masa depan",
+    "password_hint": "Minimal {{min}} karakter, mengandung huruf besar, huruf kecil, dan angka"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Kebijakan Privasi",
+      "updated": "Terakhir diperbarui: Oktober 2026",
+      "section1_title": "1. Data yang kami kumpulkan",
+      "section1_body": "Kami menyimpan data akun (nama pengguna, email, password terenkripsi), profil, resep, favorit, dan ulasan yang kamu buat. Di mode demo, data tersimpan di IndexedDB browser-mu.",
+      "section2_title": "2. Penggunaan data",
+      "section2_body": "Data dipakai untuk menjalankan aplikasi: login, menampilkan resep, favorit, dan ulasan. Kami tidak menjual datamu ke pihak lain.",
+      "section3_title": "3. Cookie dan token",
+      "section3_body": "Login memakai token JWT yang disimpan di cookie httpOnly (mode server) atau localStorage (mode demo). Token dipakai untuk mengenali sesi login-mu.",
+      "section4_title": "4. Berbagi data",
+      "section4_body": "Kami tidak membagikan data pribadimu kecuali diwajibkan hukum atau untuk menjalankan layanan (mis. hosting).",
+      "section5_title": "5. Keamanan",
+      "section5_body": "Password disimpan terenkripsi dan akses API dilindungi token. Namun tidak ada sistem yang 100% aman; gunakan password yang kuat dan unik.",
+      "section6_title": "6. Hak pengguna",
+      "section6_body": "Kamu bisa memperbarui profil dan menghapus akunmu kapan saja. Akun yang dihapus tidak bisa dipakai login lagi.",
+      "section7_title": "7. Kontak",
+      "section7_body": "Pertanyaan soal privasi bisa disampaikan lewat kanal support tempat produk ini diperoleh."
+    },
+    "terms": {
+      "title": "Syarat Layanan",
+      "updated": "Terakhir diperbarui: Oktober 2026",
+      "section1_title": "1. Penerimaan syarat",
+      "section1_body": "Dengan memakai MCO (Morphy Cook Official), kamu setuju dengan syarat ini. Kalau tidak setuju, jangan gunakan aplikasi.",
+      "section2_title": "2. Lisensi",
+      "section2_body": "Paket basic open source berlisensi MIT: bebas memakai, mengubah, dan mendistribusikan dengan mencantumkan copyright. Paket pro/custom mengikuti lisensi komersial masing-masing.",
+      "section3_title": "3. Akun dan tanggung jawab",
+      "section3_body": "Kamu bertanggung jawab menjaga akun dan password-mu. Aktivitas lewat akunmu dianggap dilakukan olehmu.",
+      "section4_title": "4. Konten pengguna",
+      "section4_body": "Resep dan ulasan yang kamu tulis tetap milikmu, tapi kamu memberi kami izin menampilkannya di aplikasi. Admin boleh menolak atau menghapus konten yang melanggar.",
+      "section5_title": "5. Larangan",
+      "section5_body": "Dilarang menyalahgunakan layanan: meretas, spam, mengunggah konten ilegal/SARA/pornografi, atau mengganggu pengguna lain.",
+      "section6_title": "6. Layanan apa adanya",
+      "section6_body": "Layanan diberikan apa adanya tanpa jaminan bebas bug. Kami bisa mengubah atau menghentikan fitur sewaktu-waktu.",
+      "section7_title": "7. Perubahan syarat",
+      "section7_body": "Syarat bisa diperbarui mengikuti perkembangan aplikasi. Versi terbaru selalu tampil di halaman ini."
+    }
+  }
+}

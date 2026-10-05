@@ -1,0 +1,77 @@
+# CONTOH request untuk dicoba lokal. Ganti token setelah login. Jangan commit token asli.
+@base = http://localhost:5010/api/
+@contentType = application/json
+@RefreshToken= PASTE_TOKEN_DISINI_SETELAH_LOGIN
+@AccessToken= PASTE_TOKEN_DISINI_SETELAH_LOGIN
+
+### Login
+POST {{base}}auth/login
+Content-Type: {{contentType}}
+
+{
+    "UsersOrEmail": "contoh@domain.com",
+    "password": "Password123!"
+}
+
+### get categories
+GET {{base}}categories/
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}
+
+### create all category
+POST {{base}}categories/create/all
+Content-Type: {{contentType}}
+Authorization: Bearer {{AccessToken}}
+
+[
+  { "name": "Makanan Utama", "desc": "Hidangan utama yang biasanya menjadi menu pokok dalam satu waktu makan." },
+  { "name": "Makanan Ringan", "desc": "Cemilan ringan yang cocok dinikmati di sela waktu makan." },
+  { "name": "Minuman", "desc": "Berbagai jenis minuman segar maupun hangat untuk menemani aktivitas." },
+  { "name": "Dessert", "desc": "Hidangan penutup yang biasanya bercita rasa manis." },
+  { "name": "Kue Tradisional", "desc": "Aneka kue khas daerah dengan cita rasa autentik." },
+  { "name": "Kue Modern", "desc": "Kue dengan gaya dan teknik modern yang kekinian." },
+  { "name": "Masakan Indonesia", "desc": "Hidangan khas Nusantara dengan beragam bumbu dan rempah." },
+  { "name": "Masakan Asia", "desc": "Kuliner khas dari berbagai negara di Asia." },
+  { "name": "Masakan Barat", "desc": "Hidangan khas Eropa dan Amerika dengan cita rasa khas." },
+  { "name": "Seafood", "desc": "Aneka hidangan berbahan dasar hasil laut seperti ikan dan udang." },
+  { "name": "Daging Sapi", "desc": "Olahan makanan berbahan dasar daging sapi." },
+  { "name": "Ayam", "desc": "Beragam resep masakan berbahan dasar ayam." },
+  { "name": "Sayuran", "desc": "Menu sehat berbahan dasar sayur-sayuran." },
+  { "name": "Vegan", "desc": "Hidangan tanpa bahan hewani sama sekali." },
+  { "name": "Vegetarian", "desc": "Menu tanpa daging namun masih bisa mengandung produk hewani seperti telur atau susu." },
+  { "name": "Sarapan", "desc": "Menu praktis dan lezat untuk memulai hari." },
+  { "name": "Makan Siang", "desc": "Hidangan yang cocok disantap saat waktu makan siang." },
+  { "name": "Makan Malam", "desc": "Menu lezat untuk dinikmati saat makan malam." },
+  { "name": "Menu Diet", "desc": "Hidangan sehat rendah kalori untuk program diet." },
+  { "name": "Menu Anak", "desc": "Menu khusus anak dengan rasa yang disukai dan bergizi." },
+  { "name": "Pedas", "desc": "Hidangan dengan cita rasa pedas yang menggugah selera." },
+  { "name": "Manis", "desc": "Makanan dan minuman dengan rasa dominan manis." },
+  { "name": "Gurih", "desc": "Hidangan dengan rasa gurih dan lezat." },
+  { "name": "Asam", "desc": "Menu dengan cita rasa segar dan sedikit asam." },
+  { "name": "Sup & Soto", "desc": "Aneka hidangan berkuah seperti sup dan soto." },
+  { "name": "Mie & Pasta", "desc": "Olahan berbahan dasar mie dan pasta dari berbagai daerah." },
+  { "name": "Nasi", "desc": "Beragam olahan nasi sebagai makanan pokok." },
+  { "name": "Gorengan", "desc": "Makanan yang diolah dengan cara digoreng." },
+  { "name": "Panggang", "desc": "Hidangan yang dimasak dengan teknik panggang atau oven." },
+  { "name": "Rebusan", "desc": "Menu yang dimasak dengan cara direbus." },
+  { "name": "Kukus", "desc": "Hidangan sehat yang dimasak dengan teknik kukus." },
+  { "name": "BBQ", "desc": "Olahan daging dan bahan lain dengan teknik bakar khas barbeque." },
+  { "name": "Street Food", "desc": "Jajanan kaki lima yang populer dan mudah ditemukan." },
+  { "name": "Cemilan Sehat", "desc": "Cemilan yang lebih sehat dengan bahan bergizi." },
+  { "name": "Minuman Dingin", "desc": "Minuman segar yang disajikan dingin." },
+  { "name": "Minuman Hangat", "desc": "Minuman yang cocok dinikmati dalam keadaan hangat." },
+  { "name": "Smoothie", "desc": "Minuman berbahan buah yang diblender dengan tekstur lembut." },
+  { "name": "Jus Buah", "desc": "Minuman sehat dari sari buah segar." },
+  { "name": "Kopi", "desc": "Beragam olahan minuman berbasis kopi." },
+  { "name": "Teh", "desc": "Minuman dari daun teh dengan berbagai variasi." },
+  { "name": "Cokelat", "desc": "Olahan makanan dan minuman berbahan cokelat." },
+  { "name": "Roti & Bakery", "desc": "Aneka roti dan produk bakery lainnya." },
+  { "name": "Puding & Jelly", "desc": "Hidangan penutup dengan tekstur lembut dan kenyal." },
+  { "name": "Es Krim", "desc": "Dessert dingin yang manis dan menyegarkan." },
+  { "name": "Saus & Sambal", "desc": "Pelengkap makanan berupa saus dan sambal." },
+  { "name": "Menu Lebaran", "desc": "Hidangan khas yang biasa disajikan saat Lebaran." },
+  { "name": "Menu Natal", "desc": "Hidangan spesial untuk perayaan Natal." },
+  { "name": "Menu Imlek", "desc": "Menu khas yang disajikan saat perayaan Imlek." },
+  { "name": "Menu Ramadan", "desc": "Hidangan untuk berbuka dan sahur selama Ramadan." },
+  { "name": "Fusion Food", "desc": "Kombinasi berbagai gaya masakan dari budaya berbeda." }
+]

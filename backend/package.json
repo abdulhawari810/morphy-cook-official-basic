@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for a food and beverage recipe website using Express.js, Node.js, and MySQL.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "migrate": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "db:setup": "npm run migrate && npm run seed"
+  },
+  "keywords": [],
+  "author": "Abdulhawari",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "argon2": "^0.44.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "knex": "^3.3.0",
+    "multer": "^2.1.1",
+    "mysql2": "^3.20.0",
+    "otplib": "^13.5.0",
+    "qrcode": "^1.5.4",
+    "sequelize": "^6.37.8",
+    "slugify": "^1.6.9",
+    "socket.io": "^4.8.3",
+    "speakeasy": "^2.0.0"
+  }
+}

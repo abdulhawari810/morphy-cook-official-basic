@@ -1,0 +1,101 @@
+# CONTOH request untuk dicoba lokal. Ganti token setelah login. Jangan commit token asli.
+@base = http://localhost:5010/api/
+@contentType = application/json
+
+
+GET {{base}}users/
+
+
+###
+GET {{base}}users/find/4
+
+###
+POST {{base}}users/create
+Content-Type: application/json
+
+{
+    "username": "Admin",
+    "email": "Admin@domain.com",
+    "password": "Admindawda1$",
+    "confPassword": "Admindawda1$",
+    "profile": "Admin",
+    "gender": "male",
+    "is_active": "active",
+    "is_verified": "in_verified"
+}
+
+###
+PATCH {{base}}users/update/4
+Content-Type: {{contentType}}
+
+{
+    "username": "Admin",
+    "email": "Admin@domain.com",
+    "password": "Admindawda1$",
+    "confPassword": "Admindawda1$",
+    "profile": "Admin",
+    "gender": "male",
+    "role": "admin",
+    "is_active": "active",
+    "is_verified": "verified"
+}
+
+###
+POST {{base}}users/create/all
+Content-Type: {{contentType}}
+
+[
+    {
+        "username": "User1",
+        "email": "user1@domain.com",
+        "password": "Password123$",
+        "confPassword": "Password123$",
+        "profile": "User",
+        "gender": "male",
+        "is_active": "active",
+        "is_verified": "verified"
+    },
+    {
+        "username": "User2",
+        "email": "user2@domain.com",
+        "password": "Password123$",
+        "confPassword": "Password123$",
+        "profile": "User",
+        "gender": "female",
+        "is_active": "active",
+        "is_verified": "verified"
+    },
+    {
+        "username": "User3",
+        "email": "user3@domain.com",
+        "password": "Password123$",
+        "confPassword": "Password123$",
+        "profile": "Moderator",
+        "gender": "male",
+        "is_active": "active",
+        "is_verified": "verified"
+    },
+    {
+        "username": "User4",
+        "email": "user4@domain.com",
+        "password": "Password123$",
+        "confPassword": "Password123$",
+        "profile": "User",
+        "gender": "female",
+        "is_active": "active",
+        "is_verified": "verified"
+    },
+    {
+        "username": "User5",
+        "email": "user5@domain.com",
+        "password": "Password123$",
+        "confPassword": "Password123$",
+        "profile": "User",
+        "gender": "male",
+        "is_active": "active",
+        "is_verified": "verified"
+    }
+]
+
+###
+DELETE {{base}}users/delete/4
